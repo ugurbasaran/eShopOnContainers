@@ -3,13 +3,9 @@
 This is a sample Markdown file that you can use in your GitHub repository. You can add and format text, headers, lists, links, and more in Markdown.
 
 @startuml
-skinparam shadowing false
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: Another authentication Response
+Bob -> Alice : Hello
 @enduml
+
 
 ## Heading 2
 
