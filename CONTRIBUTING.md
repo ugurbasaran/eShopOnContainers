@@ -8,6 +8,11 @@ However you can always get in touch with him, if you want to implement some gene
 
 ## Coding Standards
 
+```plantuml
+@startuml
+Bob -> Alice : Hello
+@enduml
+
 There are no explicit coding standards so pay attention to the general coding style, that's (mostly) used everywhere.
 
 However, there's only one **REALLY** important rule: **use spaces for indenting** 😉.
