@@ -3,7 +3,7 @@ name: Render PlantUML Diagrams
 on:
   push:
     branches:
-      - main
+      - dev
 
 jobs:
   render:
