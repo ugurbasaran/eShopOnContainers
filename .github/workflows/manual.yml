@@ -1,0 +1,25 @@
+name: Render PlantUML Diagrams
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Render PlantUML diagrams
+        run: |
+          for file in *.puml; do
+            java -jar plantuml.jar "$file"
+          done
+      - name: Commit and Push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Auto-render PlantUML diagrams"
+          git push
